@@ -1,11 +1,11 @@
 variable "aws_region" {
   description = "The AWS region to create things in."
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     =  "verginiats"
+  default     =  "tush-mum"
 }
 
 variable "instance_type" {
@@ -23,7 +23,7 @@ variable "tag_name" {
   default     = "eks-master"
 }
 
-variable "ami_id" {
+variable "ami_type" {
   description = "AMI for AmazonLinux2 EC2 instance"
-  default     = "ami-026b57f3c383c2eec"
+  default     = "AL2_x86_64"
 }
